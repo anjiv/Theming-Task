@@ -1,0 +1,26 @@
+css-global-styling:
+  version: VERSION
+  css:
+    style:
+      css/styles.css: {}
+
+js-global-styling:
+  version: VERSION
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+
+block-styling:
+  version: VERSION
+  js:
+    js/block_script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.accordion
+
+font-styling:
+  version: VERSION
+  css:
+    style:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {}

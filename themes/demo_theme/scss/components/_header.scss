@@ -1,0 +1,54 @@
+#header{
+  @include breakpoint($mobile){
+    padding: 20px 30px 20px 30px;
+    // background-color: black;
+    padding: 20px 0;
+    width: 100%;
+  }
+  #block-demo-theme-branding{
+    @include breakpoint($mobile){
+      text-align: center;
+    }
+    a{
+      @include breakpoint($mobile){
+        font-size: 25px;
+        font-weight: bold;
+        color: #9c1b1b;
+        text-decoration:none;
+      }
+      @include breakpoint($tablet){
+        font-size: 50px;
+        color: #9c1b1b;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.content-container ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:relative;
+  top: 0px;
+  left:0px;
+  padding:0px;
+  width: 100%;
+  li{
+    flex: 1 0 0;
+    a {
+      width: 100%;
+      display: block;
+      color:  #9c1b1b;
+      text-align: center;
+      padding: 14px 16px;
+      font-weight:bold;
+      text-decoration:none;
+      transition: all 200ms cubic-bezier(0.16, 0, 0.82, 0.99);
+      background-color: black;
+      &:hover {
+        background-color: #9c1b1b;
+        color:black;
+      }
+    }
+  }
+}

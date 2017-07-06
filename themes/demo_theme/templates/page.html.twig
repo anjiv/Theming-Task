@@ -1,0 +1,37 @@
+<div class="layout-container">
+
+  {% if page.header %}
+    <div id="header">
+      {{ page.header }}
+    </div>
+  {% endif %}
+
+  <div class="main">
+    <div id="first_section">
+      {% if page.sidebar_first %}
+        <div id="sidebar_first">
+          {{ page.sidebar_first }}
+        </div>
+      {% endif %}
+    </div>
+    <div id="second_section">
+      {% if page.content %}
+        <div id="content" class="layout-content">
+          {{ page.content }}
+        </div>
+      {% endif %}
+      {% if page.sidebar_second %}
+        <div id="sidebar_second">
+          {{ page.sidebar_second }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.footer %}
+    <div id="footer">
+      {{ page.footer }}
+    </div>
+  {% endif %}
+
+</div>{# /.layout-container #}

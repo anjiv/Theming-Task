@@ -1,0 +1,46 @@
+.user_view{
+  display:flex;
+  flex-flow:row wrap;
+  img{
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
+@include breakpoint($mobile){
+.views-row{
+  border: 1px solid;
+  padding: 10px;
+  width: 96%;
+  box-sizing: border-box;
+  margin: 2%;
+}
+}
+@include breakpoint($tablet){
+.views-row{
+  width: 46%;
+}
+}
+@include breakpoint($desktop){
+.views-row{
+  width: 29.333333%;
+}
+}
+.views-label{
+  font-weight: bold;
+}
+.views-field-field-firstname, .views-field-field-secondname{
+  display:inline;
+}
+.background-image{
+  text-align: center;
+  background-size: cover;
+  background: url('../images/banner1.jpeg');
+}
+.field-content{
+  width:100%;
+  display:inline;
+  img{
+    width:92px;
+    height:92px;
+  }
+}

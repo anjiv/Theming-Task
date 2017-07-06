@@ -1,0 +1,19 @@
+name: Demo_theme
+type: theme
+base theme: stable
+description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
+
+regions:
+  header: Header
+  sidebar_first: Sidebar_first
+  sidebar_second: Sidebar_second
+  content: Content
+  footer: 'Footer'
+
+libraries:
+  - demo_theme/css-global-styling
+  - demo_theme/js-global-styling
+
+core: '8.x'
+project: 'drupal'
+datestamp: 1493834648
