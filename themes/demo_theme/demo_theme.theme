@@ -1,0 +1,8 @@
+<?php
+function demo_theme_preprocess_image(&$variable) {
+  $variable['attributes']['class'][] = 'custom-image-class';
+  }
+function demo_theme_preprocess_node(&$variables) {
+  $variables['attributes']['class'][] = 'node-class';
+  $variables['#attached']['library'][] = 'demo_theme/font-styling';
+}
