@@ -6,3 +6,6 @@ function demo_theme_preprocess_node(&$variables) {
   $variables['attributes']['class'][] = 'node-class';
   $variables['#attached']['library'][] = 'demo_theme/font-styling';
 }
+function demo_theme_preprocess_views_view(&$variable) {
+  $variable['attributes']['class'][] = 'user_view';
+}

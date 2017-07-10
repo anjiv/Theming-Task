@@ -1,5 +1,5 @@
 {{ attach_library('demo_theme/block-styling') }}
-<div{{ attributes }}>
+<div{{ attributes.setAttribute('id', 'accordion') }}>
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
